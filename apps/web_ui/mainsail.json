@@ -1,0 +1,14 @@
+{
+  "id": "mainsail",
+  "name": "Mainsail Web Interface",
+  "category": "web_ui",
+  "description": "Default rich web interface for Klipper and Moonraker with extensive customization and multi-camera support.",
+  "author": "Mainsail Crew",
+  "version": "2.12.0",
+  "type": "web_ui",
+  "is_builtin": true,
+  "builtin_path": "/usr/share/mainsail",
+  "probe_path": "/usr/share/mainsail/index.html",
+  "website": "https://mainsail.xyz",
+  "source_url": "https://github.com/mainsail-crew/mainsail"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "web_ui",
+    "name": "Web Interfaces",
+    "icon": "web",
+    "description": "Browser-based printer management frontends"
+  },
+  {
+    "id": "touch_ui",
+    "name": "Touchscreen UIs",
+    "icon": "monitor",
+    "description": "On-screen touch interfaces for direct printer control"
+  },
+  {
+    "id": "plugin",
+    "name": "Plugins & Services",
+    "icon": "puzzle",
+    "description": "Moonraker extensions, companions, and helper services"
+  },
+  {
+    "id": "tool",
+    "name": "System Tools",
+    "icon": "wrench",
+    "description": "Command-line utilities and diagnostic software"
+  }
+]

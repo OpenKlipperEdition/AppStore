@@ -1,0 +1,16 @@
+{
+  "id": "fluidd",
+  "name": "Fluidd Web Interface",
+  "category": "web_ui",
+  "description": "Clean, responsive and lightweight web interface for Klipper with real-time status and powerful toolpath visualization.",
+  "author": "Fluidd Core Team",
+  "version": "1.30.0",
+  "type": "web_ui",
+  "is_builtin": false,
+  "download_url": "https://github.com/fluidd-core/fluidd/releases/download/v1.30.0/fluidd.zip",
+  "sha256": "4e73bdf2d0bfb8d601b38cf41f6e0214a1e944747ebc9735d4ffca0fe51897c8",
+  "install_path": "/usr/data/openke/apps/fluidd",
+  "probe_path": "/usr/data/openke/apps/fluidd/index.html",
+  "website": "https://fluidd.xyz",
+  "source_url": "https://github.com/fluidd-core/fluidd"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "guppyscreen",
+  "name": "GuppyScreen Touch UI",
+  "category": "touch_ui",
+  "description": "Default ultra-fast native LVGL-based touchscreen interface optimized for Ingenic X2000 MIPS.",
+  "author": "OpenKE & GuppyScreen Team",
+  "version": "1.0.0",
+  "type": "touch_ui",
+  "is_builtin": true,
+  "builtin_path": "/opt/guppyscreen/guppyscreen",
+  "probe_path": "/opt/guppyscreen/guppyscreen",
+  "source_url": "https://github.com/OpenKlipperEdition/GuppyScreen"
+}

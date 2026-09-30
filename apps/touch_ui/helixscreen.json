@@ -1,0 +1,16 @@
+{
+  "id": "helixscreen",
+  "name": "HelixScreen Touch UI",
+  "category": "touch_ui",
+  "description": "Modern alternative touchscreen user interface for Klipper built for high usability and touch gestures.",
+  "author": "HelixScreen Project",
+  "version": "0.5.0",
+  "type": "touch_ui",
+  "is_builtin": false,
+  "download_url": "https://github.com/OpenKlipperEdition/OpenKE/releases/download/nightly/helixscreen-mips.tar.gz",
+  "sha256": "",
+  "install_path": "/usr/data/openke/apps/helixscreen",
+  "executable": "helixscreen",
+  "probe_path": "/usr/data/openke/apps/helixscreen/helixscreen",
+  "source_url": "https://github.com/helixscreen/helixscreen"
+}

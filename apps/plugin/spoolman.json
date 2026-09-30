@@ -1,0 +1,15 @@
+{
+  "id": "spoolman",
+  "name": "Spoolman",
+  "category": "plugin",
+  "description": "Filament spool management service seamlessly integrated with Moonraker and Mainsail/Fluidd.",
+  "author": "Donkie",
+  "version": "0.18.0",
+  "type": "plugin",
+  "is_builtin": false,
+  "download_url": "https://github.com/Donkie/Spoolman/releases/download/v0.18.0/spoolman.zip",
+  "sha256": "",
+  "install_path": "/usr/data/openke/apps/spoolman",
+  "probe_path": "/usr/data/openke/apps/spoolman/spoolman.py",
+  "source_url": "https://github.com/Donkie/Spoolman"
+}
