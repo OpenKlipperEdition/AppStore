@@ -54,11 +54,12 @@ python3 tools/build_catalog.py
 
 3. Submit a Pull Request. Once merged, GitHub Actions will compile and publish the updated catalog to GitHub Pages.
 
-## Local Testing
+## Local Testing & Development Server
 
-To start a local test server serving `apps.json`:
+To start the local development server on the default address `http://192.168.1.88:8000`:
 ```bash
 python3 tools/build_catalog.py
-python3 tools/serve.py --port 8000
+python3 tools/serve.py --host 0.0.0.0 --port 8000
 ```
-Then point your local OpenKE printer or GuppyScreen to `http://<your-ip>:8000/apps.json`.
+OpenKE and GuppyScreen automatically prioritize `http://192.168.1.88:8000/apps.json` as their primary development endpoint before falling back to GitHub.
+
