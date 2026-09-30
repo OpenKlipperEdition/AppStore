@@ -2,6 +2,7 @@
   "id": "mobileraker",
   "name": "Mobileraker Companion",
   "category": "plugin",
+  "icon": "mobileraker",
   "description": "Push notification companion service for Mobileraker mobile app on iOS and Android.",
   "author": "Clon1998",
   "version": "0.7.0",

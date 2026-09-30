@@ -2,6 +2,7 @@
   "id": "timelapse",
   "name": "Moonraker Timelapse",
   "category": "plugin",
+  "icon": "timelapse",
   "description": "Automatic video timelapse recorder synchronized with G-code positioning and layer changes.",
   "author": "mainsail-crew",
   "version": "0.4.0",

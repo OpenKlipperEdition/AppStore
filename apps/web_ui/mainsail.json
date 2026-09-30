@@ -2,6 +2,7 @@
   "id": "mainsail",
   "name": "Mainsail Web Interface",
   "category": "web_ui",
+  "icon": "mainsail",
   "description": "Default rich web interface for Klipper and Moonraker with extensive customization and multi-camera support.",
   "author": "Mainsail Crew",
   "version": "2.12.0",

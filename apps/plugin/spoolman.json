@@ -2,6 +2,7 @@
   "id": "spoolman",
   "name": "Spoolman",
   "category": "plugin",
+  "icon": "spoolman",
   "description": "Filament spool management service seamlessly integrated with Moonraker and Mainsail/Fluidd.",
   "author": "Donkie",
   "version": "0.18.0",

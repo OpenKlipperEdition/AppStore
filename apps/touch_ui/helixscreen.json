@@ -2,6 +2,7 @@
   "id": "helixscreen",
   "name": "HelixScreen Touch UI",
   "category": "touch_ui",
+  "icon": "helixscreen",
   "description": "Modern, lightweight, and customizable touchscreen interface for Klipper built for high performance and touch gestures.",
   "author": "Preston Brown",
   "version": "1.0.2",
