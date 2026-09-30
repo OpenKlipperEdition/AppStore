@@ -7,8 +7,8 @@
   "version": "0.4.0",
   "type": "plugin",
   "is_builtin": false,
-  "download_url": "https://github.com/mainsail-crew/moonraker-timelapse/archive/refs/tags/v0.4.0.tar.gz",
-  "sha256": "",
+  "download_url": "https://github.com/OpenKlipperEdition/AppStore/releases/download/packages-v1.0/moonraker-timelapse-main.tar.gz",
+  "sha256": "78b3ac4cf1cab7e0b2239afce37f001d74a6fc458e0024726e1f03dd76681cc7",
   "install_path": "/usr/data/openke/apps/moonraker-timelapse",
   "probe_path": "/usr/data/openke/apps/moonraker-timelapse/component/timelapse.py",
   "source_url": "https://github.com/mainsail-crew/moonraker-timelapse"

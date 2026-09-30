@@ -7,8 +7,8 @@
   "version": "0.18.0",
   "type": "plugin",
   "is_builtin": false,
-  "download_url": "https://github.com/Donkie/Spoolman/releases/download/v0.18.0/spoolman.zip",
-  "sha256": "",
+  "download_url": "https://github.com/OpenKlipperEdition/AppStore/releases/download/packages-v1.0/spoolman-v0.18.0.zip",
+  "sha256": "464e8e3bf8f6167ba3ff92859ac3131ed3fc24ce5280faa4a73a1be8b5304df6",
   "install_path": "/usr/data/openke/apps/spoolman",
   "probe_path": "/usr/data/openke/apps/spoolman/spoolman.py",
   "source_url": "https://github.com/Donkie/Spoolman"
