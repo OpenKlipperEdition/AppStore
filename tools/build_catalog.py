@@ -138,6 +138,7 @@ def main():
 
     apps_out = os.path.join(output_dir, "apps.json")
     catalog_out = os.path.join(output_dir, "catalog.json")
+    root_apps_out = os.path.join(repo_root, "apps.json")
 
     with open(apps_out, "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2)
@@ -147,9 +148,25 @@ def main():
         json.dump(catalog, f, indent=2)
         f.write("\n")
 
+    with open(root_apps_out, "w", encoding="utf-8") as f:
+        json.dump(catalog, f, indent=2)
+        f.write("\n")
+
+    configs_src = os.path.join(repo_root, "configs")
+    configs_dst = os.path.join(output_dir, "configs")
+    if os.path.isdir(configs_src):
+        import shutil
+        os.makedirs(configs_dst, exist_ok=True)
+        for cf in os.listdir(configs_src):
+            s = os.path.join(configs_src, cf)
+            d = os.path.join(configs_dst, cf)
+            if os.path.isfile(s):
+                shutil.copy2(s, d)
+
     print(f"OK: Catalog built successfully with {len(catalog['apps'])} apps across {len(catalog['categories'])} categories.")
     print(f"    - {apps_out}")
     print(f"    - {catalog_out}")
+    print(f"    - {root_apps_out}")
 
 
 if __name__ == "__main__":
