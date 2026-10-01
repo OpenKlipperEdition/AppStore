@@ -22,7 +22,8 @@
   "moonraker_update_manager": {
     "type": "git_repo",
     "primary_branch": "main",
-    "origin": "https://github.com/mainsail-crew/moonraker-timelapse.git"
+    "origin": "https://github.com/mainsail-crew/moonraker-timelapse.git",
+    "is_system_service": "False"
   },
   "probe_path": "/usr/data/openke/apps/timelapse/component/timelapse.py",
   "website": "https://github.com/mainsail-crew/moonraker-timelapse",
