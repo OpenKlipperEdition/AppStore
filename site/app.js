@@ -82,6 +82,24 @@ const FALLBACK_CATALOG = {
       "klipper_include": true,
       "website": "https://github.com/mainsail-crew/moonraker-timelapse",
       "source_url": "https://github.com/mainsail-crew/moonraker-timelapse"
+    },
+    {
+      "id": "mobileraker",
+      "name": "Mobileraker Companion",
+      "category": "plugin",
+      "icon": "mobileraker",
+      "description": "Companion service for Mobileraker mobile app (iOS & Android) enabling real-time push notifications for print status, progress, M117, and errors.",
+      "author": "Patrick Schmidt (Clon1998)",
+      "version": "0.5.0",
+      "is_builtin": false,
+      "download_url": "https://github.com/OpenKlipperEdition/AppStore/releases/download/packages-v1.0/mobileraker-v0.5.0.zip",
+      "sha256": "ca8107ac8a5e374b1e09d4394c30d4868b81888779d81e0828720c8083feb039",
+      "install_path": "/usr/data/openke/apps/mobileraker",
+      "config_url": "https://raw.githubusercontent.com/OpenKlipperEdition/AppStore/main/configs/mobileraker.conf",
+      "config_target": "mobileraker.conf",
+      "service_init": "/etc/init.d/S60mobileraker",
+      "website": "https://github.com/Clon1998/mobileraker",
+      "source_url": "https://github.com/Clon1998/mobileraker_companion"
     }
   ]
 };
@@ -93,12 +111,14 @@ const ICONS = {
   puzzle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.439 7.85c0-1.57.802-2.54 2.137-2.54.385 0 .736.064 1.05.188L22.626 2H18.5a2.5 2.5 0 0 0-2.5 2.5v.939c0 1.57-.97 2.373-2.54 2.373s-2.54-.803-2.54-2.373V4.5A2.5 2.5 0 0 0 8.42 2H4.294l-.001 3.498c.314-.124.665-.188 1.05-.188 1.335 0 2.137.97 2.137 2.54s-.802 2.54-2.137 2.54c-.385 0-.736-.064-1.05-.188L4.293 14H8.5a2.5 2.5 0 0 0 2.5-2.5v-.939c0-1.57.97-2.373 2.54-2.373s2.54.803 2.54 2.373v.939A2.5 2.5 0 0 0 18.58 14h4.126l.001-3.498c-.314.124-.665.188-1.05.188-1.335 0-2.137-.97-2.137-2.54z"></path></svg>`,
   wrench: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>`,
   camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>`,
+  bell: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>`,
   external: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`,
   github: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>`
 };
 
 function getCategoryIcon(cat, id) {
   if (id === "timelapse") return ICONS.camera;
+  if (id === "mobileraker") return ICONS.bell;
   if (cat === "web_ui") return ICONS.web;
   if (cat === "touch_ui") return ICONS.monitor;
   if (cat === "plugin") return ICONS.puzzle;
