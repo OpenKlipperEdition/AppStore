@@ -13,6 +13,7 @@
   "install_path": "/usr/data/openke/apps/mobileraker",
   "config_url": "https://raw.githubusercontent.com/OpenKlipperEdition/AppStore/main/configs/mobileraker.conf",
   "config_target": "mobileraker.conf",
+  "klipper_include": false,
   "service_init": "/etc/init.d/S60mobileraker",
   "moonraker_update_manager": {
     "type": "git_repo",
