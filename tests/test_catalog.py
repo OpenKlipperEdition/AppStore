@@ -68,6 +68,13 @@ class TestAppStoreCatalog(unittest.TestCase):
         errs = validate_app_schema(invalid_app, "dummy.json")
         self.assertGreater(len(errs), 0)
 
+    def test_landing_page_assets(self):
+        site_dir = os.path.join(self.repo_root, "site")
+        self.assertTrue(os.path.isdir(site_dir), "site/ directory must exist")
+        self.assertTrue(os.path.isfile(os.path.join(site_dir, "index.html")), "site/index.html must exist")
+        self.assertTrue(os.path.isfile(os.path.join(site_dir, "style.css")), "site/style.css must exist")
+        self.assertTrue(os.path.isfile(os.path.join(site_dir, "app.js")), "site/app.js must exist")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

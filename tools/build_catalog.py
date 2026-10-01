@@ -163,10 +163,23 @@ def main():
             if os.path.isfile(s):
                 shutil.copy2(s, d)
 
-    print(f"OK: Catalog built successfully with {len(catalog['apps'])} apps across {len(catalog['categories'])} categories.")
+    # Copy website landing page assets
+    site_src = os.path.join(repo_root, "site")
+    if os.path.isdir(site_src):
+        import shutil
+        for sf in os.listdir(site_src):
+            s = os.path.join(site_src, sf)
+            d = os.path.join(output_dir, sf)
+            if os.path.isfile(s):
+                shutil.copy2(s, d)
+            elif os.path.isdir(s):
+                shutil.copytree(s, d, dirs_exist_ok=True)
+
+    print(f"OK: Catalog and landing page built successfully with {len(catalog['apps'])} apps across {len(catalog['categories'])} categories.")
     print(f"    - {apps_out}")
     print(f"    - {catalog_out}")
     print(f"    - {root_apps_out}")
+    print(f"    - {os.path.join(output_dir, 'index.html')}")
 
 
 if __name__ == "__main__":
