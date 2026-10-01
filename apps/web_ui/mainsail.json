@@ -9,6 +9,7 @@
   "type": "web_ui",
   "is_builtin": true,
   "builtin_path": "/usr/share/mainsail",
+  "config_target": "macros/mainsail.cfg",
   "probe_path": "/usr/share/mainsail/index.html",
   "website": "https://mainsail.xyz",
   "source_url": "https://github.com/mainsail-crew/mainsail"
