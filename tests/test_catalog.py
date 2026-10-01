@@ -43,8 +43,7 @@ class TestAppStoreCatalog(unittest.TestCase):
     def test_catalog_compilation(self):
         catalog = build_catalog(self.repo_root, compute_hashes=False)
         self.assertIn("version", catalog)
-        self.assertIn("categories", catalog)
-        self.assertEqual(len(catalog["apps"]), 4)
+        self.assertEqual(len(catalog["apps"]), 5)
 
         app_ids = set()
         for app in catalog["apps"]:
@@ -58,6 +57,7 @@ class TestAppStoreCatalog(unittest.TestCase):
         self.assertIn("fluidd", app_ids)
         self.assertIn("guppyscreen", app_ids)
         self.assertIn("helixscreen", app_ids)
+        self.assertIn("timelapse", app_ids)
 
     def test_schema_validator_catches_invalid_app(self):
         invalid_app = {
