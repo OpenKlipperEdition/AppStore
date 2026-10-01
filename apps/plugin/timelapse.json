@@ -19,12 +19,6 @@
     "timelapse"
   ],
   "moonraker_config": "[timelapse]\noutput_path: /opt/printer_data/timelapse/\nframe_path: /tmp/timelapse/printer_data\nffmpeg_binary_path: /usr/bin/ffmpeg",
-  "moonraker_update_manager": {
-    "type": "git_repo",
-    "primary_branch": "main",
-    "origin": "https://github.com/mainsail-crew/moonraker-timelapse.git",
-    "is_system_service": "False"
-  },
   "probe_path": "/usr/data/openke/apps/timelapse/component/timelapse.py",
   "website": "https://github.com/mainsail-crew/moonraker-timelapse",
   "source_url": "https://github.com/mainsail-crew/moonraker-timelapse"

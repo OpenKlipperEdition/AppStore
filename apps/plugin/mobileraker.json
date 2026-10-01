@@ -19,12 +19,6 @@
     "priority": 60,
     "oom_score_adj": -500
   },
-  "moonraker_update_manager": {
-    "type": "git_repo",
-    "primary_branch": "main",
-    "origin": "https://github.com/Clon1998/mobileraker_companion.git",
-    "is_system_service": "False"
-  },
   "probe_path": "/usr/data/openke/apps/mobileraker/mobileraker.py",
   "website": "https://github.com/Clon1998/mobileraker",
   "source_url": "https://github.com/Clon1998/mobileraker_companion"
