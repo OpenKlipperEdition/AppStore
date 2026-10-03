@@ -110,7 +110,7 @@ const FALLBACK_CATALOG = {
       "version": "0.18.0",
       "is_builtin": false,
       "download_url": "https://github.com/OpenKlipperEdition/AppStore/releases/download/packages-v1.0/spoolman-v0.18.0.zip",
-      "sha256": "ad4ab8eadcd983b89815633eb10bf402f01973f6ae0396b49dda863ac933ac03",
+      "sha256": "58d1b5368aee6474ffa37d504b56d8a10ba2b0dd89cf0d711e92369fdc41c878",
       "install_path": "/usr/data/openke/apps/spoolman",
       "website": "https://github.com/Donkie/Spoolman",
       "source_url": "https://github.com/Donkie/Spoolman"
